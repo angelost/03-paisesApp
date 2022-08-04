@@ -22,10 +22,32 @@
                 <li class="list-group-item">
                     <strong>Población</strong> {{ pais.population | number }}
                 </li>
+                <li class="list-group-item">
+                    <strong>Codigo Númerico</strong> {{ pais.population | number }}
+                </li>
+                <li class="list-group-item">
+                    <strong>Codigo alpha3</strong> {{ pais.population | number }}
+                </li>
             </ul>
         </div>
     </div>
 
-    
+    <h3>Traducciones</h3>
+
+    <div class="row">
+        <div class="col">
+            <span class="badge bg-primary mr-1"> {{ pais.translations['ara'].common }} </span>
+            <span class="badge bg-primary mr-1"> {{ pais.translations['fra'].common }} </span>
+            <span class="badge bg-primary mr-1"> {{ pais.translations['hun'].common }} </span>
+            <span class="badge bg-primary mr-1"> {{ pais.translations['jpn'].common }} </span>
+            <span class="badge bg-primary mr-1"> {{ pais.translations['ita'].common }} </span>
+            <span class="badge bg-primary mr-1"> {{ pais.translations['rus'].common }} </span>
+            <span class="badge bg-primary mr-1"> {{ pais.translations['est'].common }} </span>
+            <span class="badge bg-primary mr-1"> {{ pais.translations['swe'].common }} </span>
+            <span class="badge bg-primary mr-1"> {{ pais.translations['zho'].common }} </span>
+            <span class="badge bg-primary mr-1"> {{ pais.translations['rus'].common }} </span>
+            <span class="badge bg-primary mr-1"> {{ pais.translations['pol'].common }} </span>
+        </div>
+    </div>    
 
 </ng-template> 
