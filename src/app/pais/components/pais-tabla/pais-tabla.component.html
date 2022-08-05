@@ -11,11 +11,11 @@
     <tbody>
         <tr *ngFor="let pais of paises; let i = index">
             <td> {{ i + 1 }} </td>
-            <td> <img [src]="pais.flags.png" class="small-flag"> </td>
-            <td> {{ pais.capital }}, {{  pais.name.common }} </td>
+            <td> <img [src]="pais.flag" class="small-flag"> </td>
+            <td> {{ pais.capital }}, {{  pais.name }} </td>
             <td> {{ pais.population | number }} </td>
             <td>
-                <a [routerLink]="[ '/pais', pais.cca2]">Ver...</a>
+                <a [routerLink]="[ '/pais', pais.alpha2Code ]">Ver...</a>
             </td>
         </tr>
     </tbody>
